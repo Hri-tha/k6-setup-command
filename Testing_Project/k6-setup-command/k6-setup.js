@@ -41,7 +41,7 @@ export default function () {
 
 // Template for the config.js file
 const configFileContent = `
-module.exports = {
+export const config = {
   VUS: 10,
   DURATION: '30s',
   URL: 'https://hkt9137.netlify.app/',
