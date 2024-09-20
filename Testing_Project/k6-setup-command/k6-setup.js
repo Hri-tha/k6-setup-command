@@ -10,7 +10,7 @@ const k6TestDirectory = './k6-tests';
 const basicTestFile = `
 import http from 'k6/http';
 import { check, sleep } from 'k6';
-import { config } from '../config';  // Import config file
+import { config } from './config.js';   // Import config file
 
 export const options = {
   vus: __ENV.VUS ? parseInt(__ENV.VUS) : config.VUS,               // Number of Virtual Users
